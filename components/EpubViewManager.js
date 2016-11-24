@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ReactNative from 'react-native';
 
 import {
   StyleSheet,
@@ -6,7 +7,8 @@ import {
   ScrollView,
   Dimensions,
   InteractionManager,
-  NativeMethodsMixin
+  NativeMethodsMixin,
+  NativeModules
 } from 'react-native';
 
 import ReactNative from 'ReactNative';
@@ -19,7 +21,7 @@ const core = require("epubjs/lib/utils/core");
 
 import EpubView from './EpubView';
 
-const RCTScrollViewManager = require('NativeModules').ScrollViewManager;
+const RCTScrollViewManager = NativeModules.ScrollViewManager;
 
 const DEFAULT_SCROLL_RENDER_AHEAD = 1000;
 const DEFAULT_END_REACHED_THRESHOLD = 1000;
