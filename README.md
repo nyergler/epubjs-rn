@@ -12,9 +12,11 @@ To use the components in your own app install via npm
 npm install --save futurepress/epubjs-rn
 ```
 
-then link the required libraries with
+then link the EpubReader and its required libraries with
 ```bash
 react-native link
+react-native link react-native-fs
+react-native link react-native-fetch-blob
 ```
 
 then require the `components` you need
