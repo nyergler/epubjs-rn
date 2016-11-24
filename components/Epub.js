@@ -4,10 +4,10 @@ import {
   StyleSheet,
   View,
   ActivityIndicator,
-  AsyncStorage
+  AsyncStorage,
+  Dimensions
 } from 'react-native';
 
-import Dimensions from 'Dimensions';
 import Orientation from 'react-native-orientation';
 
 import RNFetchBlob from 'react-native-fetch-blob'
@@ -36,7 +36,7 @@ const EpubViewManager = require('./EpubViewManager');
 
 const RNFS = require('react-native-fs');
 
-const EPUBJS = readFileSync(join(__dirname, '../node_modules/epubjs/dist/epub.js'), 'utf8');
+const EPUBJS = readFileSync(join(__dirname, '../../epubjs/dist/epub.js'), 'utf8');
 
 class Epub extends Component {
 
