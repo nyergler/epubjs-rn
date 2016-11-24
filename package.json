@@ -18,6 +18,10 @@
     "react-native-fs": "^2.0.1-rc.2",
     "react-native-orientation": "yamill/react-native-orientation"
   },
+  "peerDependencies": {
+      "react": "~15.4.0",
+      "react-native": "~0.38.0"
+  },
   "devDependencies": {
     "babel-jest": "17.0.2",
     "babel-preset-react-native": "1.9.0",
